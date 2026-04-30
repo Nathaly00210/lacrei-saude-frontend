@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🏥 Lacrei Saúde - Desafio Front-end
 
-## Getting Started
+Projeto desenvolvido como parte de um desafio técnico, com foco em acessibilidade, performance e boas práticas, atingindo excelentes métricas de qualidade com Lighthouse.
 
-First, run the development server:
+---
 
-```bash
+🚀 Tecnologias utilizadas
+
+- Next.js
+- React
+- TypeScript
+- Styled-components
+- Jest
+- Testing Library
+
+---
+
+📁 Estrutura do projeto
+
+src/
+  components/
+  __tests__/
+  pages/
+
+---
+
+⚙️ Como rodar o projeto
+
+1. Clone o repositório
+
+git clone https://github.com/Nathaly00210/lacrei-saude-frontend.git
+
+2. Acesse a pasta
+
+cd lacrei-saude-frontend
+
+3. Instale as dependências
+
+npm install
+
+4. Rode o projeto
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará disponível em:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧪 Testes
 
-## Learn More
+Todos os testes estão passando com sucesso utilizando Jest e Testing Library.
 
-To learn more about Next.js, take a look at the following resources:
+Para rodar:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm test
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✔ Componentes testados
+- Button
+- Header
+- Footer
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📊 Qualidade (Lighthouse)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ⚡ Performance: 91
+- ♿ Acessibilidade: 100
+- ✅ Boas práticas: 100
+- 🔎 SEO: 100
+
+---
+
+📱 Responsividade
+
+O projeto foi desenvolvido seguindo abordagem mobile-first, garantindo boa usabilidade em diferentes tamanhos de tela.
+
+---
+
+♿ Acessibilidade
+
+Foram aplicadas boas práticas como:
+- Uso de HTML semântico
+- Contraste adequado
+- Estrutura acessível
+- Uso de atributos ARIA quando necessário
+
+---
+
+🔘 Funcionalidades
+
+- Navegação entre páginas funcional
+- Botões interativos com ações reais
+- Layout baseado no Marsha Design System
+
+---
+
+🌐 Deploy
+
+👉 https://lacrei-saude-frontend-iota.vercel.app/
+
+---
+
+🔄 Rollback
+
+Caso seja necessário reverter alterações:
+
+git log
+
+Escolha o commit desejado e execute:
+
+git checkout <id-do-commit>
+
+---
+
+🧠 Decisões técnicas
+
+- Utilização do Next.js para otimização de performance e SEO
+- Styled-components para estilização modular e reutilizável
+- Jest + Testing Library para garantir confiabilidade dos componentes
+- Mock de funcionalidades do Next.js (como fontes) para compatibilidade com testes
+
+---
+
+🟡 Diferenciais
+
+- Configuração completa de testes com Jest em ambiente Next.js
+- Resolução de conflitos entre Babel, TypeScript e JSX
+- Implementação de mocks para recursos não suportados em ambiente de teste
+
+---
+
+👩‍💻 Autora
+
+Desenvolvido por Naty
