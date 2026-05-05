@@ -1,6 +1,6 @@
 🏥 Lacrei Saúde - Desafio Front-end
 
-Projeto desenvolvido como parte de um desafio técnico, com foco em acessibilidade, performance e boas práticas, atingindo excelentes métricas de qualidade com Lighthouse.
+Projeto desenvolvido com foco em acessibilidade, performance e padronização visual, seguindo princípios de experiência inclusiva e boas práticas modernas de desenvolvimento front-end.
 
 ---
 
@@ -21,6 +21,8 @@ src/
   components/
   __tests__/
   pages/
+
+A estrutura foi organizada visando separação clara de responsabilidades, facilitando manutenção e escalabilidade.
 
 ---
 
@@ -49,7 +51,7 @@ http://localhost:3000
 
 🧪 Testes
 
-Todos os testes estão passando com sucesso utilizando Jest e Testing Library.
+Os testes unitários foram implementados com foco em garantir a renderização correta e comportamento básico dos componentes principais da interface.
 
 Para rodar:
 
@@ -71,19 +73,45 @@ npm test
 
 ---
 
+⚡ Performance
+
+A aplicação utiliza recursos nativos do Next.js para otimização:
+
+- Otimização automática de bundle
+- Carregamento eficiente de páginas
+- Possibilidade de uso de lazy loading para componentes
+- Estrutura preparada para uso de next/image para otimização de imagens
+
+Essas estratégias contribuem para melhor tempo de carregamento e experiência do usuário.
+
+---
+
 📱 Responsividade
 
-O projeto foi desenvolvido seguindo abordagem mobile-first, garantindo boa usabilidade em diferentes tamanhos de tela.
+O projeto foi desenvolvido com abordagem mobile-first, garantindo adaptação consistente em diferentes tamanhos de tela.
 
 ---
 
 ♿ Acessibilidade
 
-Foram aplicadas boas práticas como:
-- Uso de HTML semântico
-- Contraste adequado
-- Estrutura acessível
-- Uso de atributos ARIA quando necessário
+Além das métricas do Lighthouse, foram consideradas práticas como:
+
+- Uso de HTML semântico (header, main, nav, footer)
+- Estrutura de navegação clara
+- Uso de atributos aria quando necessário
+- Garantia de contraste adequado
+- Interface navegável e compreensível
+
+---
+
+🎨 Design System
+
+A interface foi construída com base no Marsha Design System, buscando manter consistência visual através de:
+
+- Padronização de cores
+- Tipografia consistente
+- Componentes reutilizáveis
+- Espaçamentos organizados
 
 ---
 
@@ -91,7 +119,7 @@ Foram aplicadas boas práticas como:
 
 - Navegação entre páginas funcional
 - Botões interativos com ações reais
-- Layout baseado no Marsha Design System
+- Componentização reutilizável
 
 ---
 
@@ -99,34 +127,40 @@ Foram aplicadas boas práticas como:
 
 👉 https://lacrei-saude-frontend-iota.vercel.app/
 
+A aplicação foi publicada utilizando a Vercel, aproveitando sua integração nativa com projetos Next.js.
+
 ---
 
 🔄 Rollback
 
-Caso seja necessário reverter alterações:
+O versionamento da aplicação é gerenciado automaticamente pela Vercel.
 
-git log
+Cada novo deploy gera uma versão independente, permitindo:
 
-Escolha o commit desejado e execute:
+- Visualizar versões anteriores
+- Restaurar rapidamente um deploy estável
+- Testar mudanças em ambientes isolados (preview deployments)
 
-git checkout <id-do-commit>
+Isso garante segurança e controle em ambiente de produção.
 
 ---
 
 🧠 Decisões técnicas
 
-- Utilização do Next.js para otimização de performance e SEO
-- Styled-components para estilização modular e reutilizável
-- Jest + Testing Library para garantir confiabilidade dos componentes
-- Mock de funcionalidades do Next.js (como fontes) para compatibilidade com testes
+- Next.js: escolhido pela otimização automática, SSR e melhor performance
+- TypeScript: maior segurança e previsibilidade no desenvolvimento
+- Styled-components: encapsulamento de estilos e reutilização de componentes
+- Jest + Testing Library: foco em testes de comportamento e confiabilidade
+- Mocks no Jest: utilizados para lidar com dependências do Next.js (ex: fontes)
 
 ---
 
 🟡 Diferenciais
 
-- Configuração completa de testes com Jest em ambiente Next.js
-- Resolução de conflitos entre Babel, TypeScript e JSX
-- Implementação de mocks para recursos não suportados em ambiente de teste
+- Configuração completa de testes em ambiente Next.js
+- Integração de ferramentas modernas de front-end
+- Preocupação com acessibilidade e experiência do usuário
+- Estrutura preparada para crescimento e manutenção
 
 ---
 
